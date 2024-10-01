@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float   horas, precioh,salarion;
+    string nombre;
+    cout<<"Como se llama?: "<<endl;
+    cin>>nombre;
+    cout<<"cuanto cobra por hora?"<<endl;
+    cin>>precioh;
+
+   cout<<"Cuantas horas trabajo este mes?"<<endl;
+   cin>>horas;
+   salarion=precioh*horas;
+   if(salarion>=8272)
+        salarion=salarion-(salarion*0.13);
+ 
+   cout<<"el salario neto es: "<<salarion<<endl;
+
+    return 0;
+}
