@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int edad;
+cout<<"Digite su edad: ";
+cin>>edad;
+switch(edad)
+{
+    case 18: cout<<"La edad esta entre el estandar";
+    break;
+    case 19: cout<<"La edad esta entre el estandar";
+    break;
+    case 20: cout<<"La edad esta entre el estandar";
+    break;
+    case 21: cout<<"La edad esta entre el estandar";
+    break;
+    case 22: cout<<"La edad esta entre el estandar";
+    break;
+    case 23: cout<<"La edad esta entre el estandar";
+    break;
+    case 24: cout<<"La edad esta entre el estandar";
+    break;
+    case 25: cout<<"La edad esta entre el estandar";
+    break;
+    default : cout<<"La edad es atipica";
+}
+
+
+
+
+
+
+
+    return 0;
+}
