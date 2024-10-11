@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int numero;
+   cout<<"  Digite un numero del 1 al 5: ";
+   cin>>numero;
+   switch(numero)
+   {
+       case 1: cout<<"El numero es uno";
+       break;
+       case 2 : cout<<"El numero es dos";
+       break;
+       case 3: cout<<"El numero es tres";
+       break;
+       case 4 : cout<<"El numero es cuatro";
+       break;
+       case 5 : cout<<"El numero es cinco";
+       break;
+       default : cout<<"El numero no esta entre el rango 1-5";
+   }
+
+    return 0;
+}
