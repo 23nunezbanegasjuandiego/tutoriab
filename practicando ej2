@@ -5,8 +5,8 @@ int main()
     int numero, dato;
     cout<<"Ingrese un numero: ";
     cin>>numero;
-    dato=5;
-    if(numero==dato)
+    dato=5;    //aqui se le pone solo un = por que le estoy asignando un valor, en resumen estoy usando la funcion de asignacion
+    if(numero==dato)          // se le pone== por que esto diciendo si se cumple la igualdad
     {
         cout<<"EL NUMERO ES 5.";
 
