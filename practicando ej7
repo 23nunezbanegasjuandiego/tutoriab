@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+char letra;
+cout<<"Digite una letra: ";
+cin>>letra;
+switch(letra){
+    case 'a': cout<<"La letra es minucuala";
+    break;
+    case 'e': cout<<"La letra es minucuala";
+    break;
+    case 'i': cout<<"La letra es minucuala";
+    break;
+    case 'o': cout<<"La letra es minucuala";
+    break;
+    case 'u': cout<<"La letra es minucuala";
+    break;
+    
+   case 'A': cout<<"La letra es mayuscula";
+    break;
+    case 'E': cout<<"La letra es mayuscula";
+    break;
+    case 'I': cout<<"La letra es mayuscula";
+    break;
+    case 'O': cout<<"La letra es mayuscula";
+    break;
+    case 'U': cout<<"La letra es mayuscula";
+    break;
+    default : cout<<"el caracter no es una letra";
+}
+
+
+
+
+
+
+
+    return 0;
+}
