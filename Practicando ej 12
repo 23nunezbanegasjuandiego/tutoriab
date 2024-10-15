@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int saldoinicial=1000, opc, extra,resta;
+    cout<<"Bienvenido"<<endl;
+    cout<<"1. Ingrese saldo"<<endl;
+    cout<<"2.Retire dinero "<<endl;
+    cout<<"3. Salir"<<endl;
+    cin>>opc;
+    switch(opc){
+        case 1: cout<<"Cuanto saldo desea ingresar : ";
+        cin>>extra;
+        saldoinicial=saldoinicial+extra;
+        cout<<"El dinero actual en su cuenta es de :"<<saldoinicial<<"Bs"<<endl;
+        break;
+        case 2 : cout<<"Cuanto dinero desea retirar :";
+        cin>>resta;
+        if(resta>saldoinicial){
+            cout<<"No cuenta con ese saldo en su cuenta";
+        }
+        else {
+         saldoinicial=saldoinicial-resta;
+        cout<<"El dinero actual de su cuenta es de: "<<saldoinicial<<"Bs";   
+        }
+        
+        break;
+        
+        case 3: cout<<"Gracias por su preferencia :) "<<endl;
+        break;
+    }
+    return 0;
+}
