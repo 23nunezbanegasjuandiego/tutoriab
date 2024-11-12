@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+int cargarapuestas(int idcarrera[], float montoapuesta[], int ci[], int n)
+{
+	float mayor = 0, auxmayor;
+	for (int i = 0; i < n; i++)
+	{
+		cout << " BIENVENIDO AL CLUB HIDALGO " << endl;
+		cout << "DIGITE EL ID DE LA CARRERA: " << endl;
+		cin >> idcarrera[i];
+		cout << "DIGITE SU CI: " << endl;
+		cin >> ci[i];
+		cout << "DIGITE LA CANTIDAD QUE DESEE APOSTAR";
+		cin >> montoapuesta[i];
+		if (mayor < montoapuesta[i]) {
+			mayor = montoapuesta[i];
+			auxmayor = i;
+		}
+	}
+	return auxmayor;
+}
+int main()
+{
+	int n,i, idcarrera[100], ci[100], idmax;
+	float montoapuesta[100];
+	do{
+		cout << "INGRESE EL NUMERO DE APUESTAS" << endl;
+		cin >> n;
+	} while (n <= 0 || n > 100);
+		idmax = cargarapuestas(idcarrera, montoapuesta, ci,  n);
+	cout << "La mayor apuesta es de: " << montoapuesta[idmax]<<"$ ,su id de carrera es :" << idcarrera[idmax] << "y su CI es: " << ci[idmax];
+
+
+
+
+
+		return 0;
+}
+
