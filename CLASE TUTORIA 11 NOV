@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+void cargarApuestas(int ids[], int cedulas[], float montos[], int n) {
+    for (int i = 0; i < n; i++) {
+        cout << "Apuesta " << i + 1 << ":" << endl;
+        cout << "Ingrese el ID de la carrera: ";
+        cin >> ids[i];
+        cout << "Ingrese la cedula del apostador: ";
+        cin >> cedulas[i];
+        cout << "Ingrese el monto de la apuesta: ";
+        cin >> montos[i];
+        cout << endl;
+    }
+}
+
+void encontrarMayorApuesta(int ids[], int cedulas[], float montos[], int n) {
+    int indiceMayor = 0;
+    for (int i = 1; i < n; i++) {
+        if (montos[i] > montos[indiceMayor]) {
+            indiceMayor = i;
+        }
+    }
+    cout << "El apostador que mas aposto es:" << endl;
+    cout << "ID de la carrera: " << ids[indiceMayor] << endl;
+    cout << "CI del apostador: " << cedulas[indiceMayor] << endl;
+    cout << "Monto apostado: " << montos[indiceMayor] << endl;
+}
+
+int main() {
+    int n;
+    cout<<"BIENVENIDO AL CLUB HIDALGO"<<endl;
+    cout << "Ingrese la cantidad de apuestas: "<<endl;
+    cin >> n;
+
+    int ids[n], cedulas[n];
+    float montos[n];
+
+    cargarApuestas(ids, cedulas, montos, n);
+    encontrarMayorApuesta(ids, cedulas, montos, n);
+
+    return 0;
+}
