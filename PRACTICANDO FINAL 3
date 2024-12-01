@@ -1,0 +1,19 @@
+#include <iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+int n,fact=1;
+cout<<"DIGITE EL NUMERO DE ELEMENTOS QUE DESESA SACAR EL FACTORIAL: "<<endl;
+cin>>n;
+for(int i=1;i<=n;i++){
+    fact=fact*i;
+}
+cout<<"EL FACTORIAL DEL NUMERO SELECCIONADO ES : "<<fact<<endl;
+
+     
+ 
+ 
+getch();
+    return 0;
+}
