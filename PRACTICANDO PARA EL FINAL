@@ -1,0 +1,19 @@
+#include <iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+ int suma=0,numero;
+ 
+     cout<<"DIGITA EL NUMERO DE ELEMENTOS"<<endl;
+     cin>>numero;
+     for(int i=1;i<=numero;i++){
+         suma+=i;
+     }
+     cout<<"La suma de los elementos son: "<<suma<<endl;
+     
+ 
+ 
+getch();
+    return 0;
+}
