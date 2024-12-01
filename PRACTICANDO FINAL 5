@@ -1,0 +1,29 @@
+/******************************************************************************
+
+serie fibonacci
+
+*******************************************************************************/
+#include <iostream>
+#include<conio.h>
+#include<math.h>
+using namespace std;
+int main()
+{
+int n,x=0,y=1,z=1;
+cout<<"DIGITE EL NUMERO de elementos :"<<endl;
+cin>>n;
+for(int i=1;i<=n;i++){
+    z=x+y;
+    cout<<z<<" "<<endl;
+    x=y;
+    y=z;
+    
+}
+
+
+     
+ 
+ 
+getch();
+    return 0;
+}
