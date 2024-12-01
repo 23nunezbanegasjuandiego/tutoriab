@@ -13,9 +13,9 @@ int n,x=0,y=1,z=1;
 cout<<"DIGITE EL NUMERO de elementos :"<<endl;
 cin>>n;
 for(int i=1;i<=n;i++){
-    z=x+y;
+    z=x+y;       //primero x vale 0 y y vale 1 e imprime eso, ahora que los numeros cambiaron ahora es z= x+y que es 2, ahora va a sumarse X + Y 1+ 2 3.....
     cout<<z<<" "<<endl;
-    x=y;
+    x=y;       //despues aqui intercambia valores x ahora vale 1 y y vale lo mismo que z osea 1,ahora x vale 1 y Y vale 2,
     y=z;
     
 }
