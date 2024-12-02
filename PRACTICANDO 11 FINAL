@@ -1,0 +1,12 @@
+#include <iostream>
+#include<conio.h>
+#include<string.h>
+
+using namespace std;
+int main()
+{
+int cantidad=0;
+char palabra[]="hola";
+
+cantidad = strlen(palabra);
+cout<<"LA CANTIDAD DE CARACTERES SON: "<<cantidad<<endl;
