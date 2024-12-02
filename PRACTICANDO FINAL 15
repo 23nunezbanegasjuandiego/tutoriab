@@ -1,0 +1,20 @@
+/**************************************************************************
+ aprendiendo strcat . PIDO AL USUARIO EL NOMBRE PARA PODER 
+ COMPLETAR LA FRASE
+*******************************************************************************/
+#include<iostream>
+#include<string.h>
+#include<conio.h>
+using namespace std;
+int main(){
+    char palabra1[]="Hola como estas ";
+    char palabra2[100];
+    char unidos[100];
+    cout<<"Digita el nombre de la persona: "<<endl;
+    cin.getline(palabra2,100);
+    strcpy(unidos,palabra1);
+    strcat(unidos,palabra2);
+    cout<<"EL MENSAJE COMPLETO ES: "<<unidos<<endl;
+    getch();
+    return 0;
+}
