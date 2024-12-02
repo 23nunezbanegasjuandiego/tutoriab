@@ -1,0 +1,25 @@
+/**************************************************************************
+ aprendiendo la funcion strcmp y pidiendo al usuario que digite 2 palabras 
+ y ver si son iguales o diferentes
+*******************************************************************************/
+#include<iostream>
+#include<string.h>
+#include<conio.h>
+using namespace std;
+int main(){
+    char palabra1[100];
+    char palabra2[100];
+    cout<<"DIGITE LA PRIMERA PALABRA: "<<endl;
+    cin.getline(palabra1,100);
+    cout<<"DIGITE LA SEGUNDA PALABRA: "<<endl;
+    cin.getline(palabra2,100);
+    if(strcmp(palabra1,palabra2)==0){
+        cout<<"LAS PALABRAS INGRESADAS SON IGUALES: "<<endl;
+    }
+    else{ 
+        cout<<"LAS PALABRAS INGRESADAS SON DIFERENTES "<<endl;
+         
+    }
+    getch();
+    return 0;
+}
