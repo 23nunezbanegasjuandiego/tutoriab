@@ -1,0 +1,20 @@
+/**************************************************************************
+ PEDIR AL USUARIO UNA CADENA DE CARACTERES Y ALMACENARLO O COPIARLO EN OTRO ESPACIO
+*******************************************************************************/
+#include <iostream>
+#include<conio.h>
+#include<string.h>
+
+using namespace std;
+int main()
+{
+    int i=0;
+char palabra1[100];
+char palabra2[100];
+cout<<" DIGITE UNA CADENA DE PALABRAS: "<<endl;
+cin.getline(palabra1,100);
+strcpy(palabra2,palabra1);
+cout<<"Lo que se almaceno fue: "<< palabra2<<endl;
+getch();
+    return 0;
+}
